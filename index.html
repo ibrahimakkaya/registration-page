@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Register Today.com</title>
+  </head>
+  <body>
+    <main>
+      <aside>
+        <div class="aside-logo">
+          <img src="img/today-logos_transparent.png" alt="" />
+        </div>
+      </aside>
+      <article>
+        <header>
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+          </p>
+          <p>You know you want to.</p>
+        </header>
+
+        <form action="example.com/path" method="post">
+          <div class="form">
+            <h2 class="form-header">Let's do this</h2>
+            <div class="form-input">
+              <label for="firstName">first name</label>
+              <input type="text" id="firstName" />
+            </div>
+            <div class="form-input">
+              <label for="lastName">last name</label>
+              <input type="text" id="lastName" />
+            </div>
+            <div class="form-input">
+              <label for="eMail">e-mail</label>
+              <input type="email" id="eMail" />
+            </div>
+            <div class="form-input">
+              <label for="phoneNumber">phone number</label>
+              <input type="tel" id="phoneNumber" />
+            </div>
+            <div class="form-input">
+              <label for="password">password *</label>
+              <input
+                type="password"
+                id="password"
+                required
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+              />
+            </div>
+            <div class="form-input">
+              <label for="confirmPassword">confirm password *</label>
+              <input type="password" id="confirmPassword" required />
+            </div>
+          </div>
+          <button class="account-button" type="submit">Create Account</button>
+        </form>
+
+        <div class="login">
+          <p>Already have an account? <a href="index.html">Log in</a></p>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <svg
+        class="circle-footer"
+        viewBox="0 0 100 100"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="50" cy="50" r="50" />
+      </svg>
+    </footer>
+  </body>
+</html>

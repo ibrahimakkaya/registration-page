@@ -1,0 +1,194 @@
+/* CSS DIRECTORY
+	1. =GLOBAL
+	2. =HEADER
+	3. =SIDE
+	4. =FOOTER
+*/
+
+/* === STYLE === 
+
+main-color: #be37fd
+background-color: rgb(248, 248, 248)
+contrast-grey-color: rgb(70, 70, 70)
+
+*/
+
+/* === GLOBAL SETTINGS === */
+
+:root {
+  --background-color: #fdfdff;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* === MAIN SETTINGS === */
+
+main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 4rem;
+  margin-top: 6rem;
+}
+
+input,
+label {
+  display: block;
+}
+
+header,
+.login {
+  padding-left: 6rem;
+}
+
+.login a {
+  text-decoration: none;
+}
+
+form label {
+  text-transform: uppercase;
+}
+
+header,
+.login,
+form label {
+  color: rgb(70, 70, 70);
+}
+
+.form {
+  display: grid;
+  width: 60vw;
+  grid-template-columns: 12rem 200px;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 1rem;
+  column-gap: 2rem;
+  padding: 20px;
+  padding: 5rem 0rem;
+  padding-left: 6rem;
+  box-shadow: 0px 5px 40px -20px #be37fd46;
+  position: relative;
+}
+
+.account-button {
+  margin-top: 2rem;
+  margin-left: 6rem;
+  padding: 12px 36px;
+  border: none;
+  border-radius: 6px;
+  background-color: #be37fd;
+  color: #fdfdff;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.account-button:hover {
+  background-color: #f748f3;
+}
+
+form input {
+  border-radius: 6px;
+  border: 1px solid rgb(192, 192, 192);
+  height: 28px;
+  width: 12rem;
+}
+
+textarea:focus,
+input:focus {
+  outline: 1px solid rgba(209, 114, 209, 0.336);
+}
+
+input:invalid {
+  border-color: #f3181883;
+}
+
+form label {
+  font-size: 14px;
+}
+
+/* === HEADER SETTINGS === */
+
+header {
+  font-size: 1.4rem;
+  font-weight: 600;
+  width: 38rem;
+  /* margin-top: 4rem; */
+}
+
+.form-header {
+  position: absolute;
+  left: 6rem;
+  color: rgb(70, 70, 70);
+  font-size: 24px;
+}
+
+/* === SIDE SETTINGS === */
+
+aside {
+  width: 40vw;
+  background-color: var(--background-color);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.137), rgba(0, 0, 0, 0.219)),
+    url(img/walling-52H5Nfi5WiE-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  fill: #fdfdff;
+}
+
+aside img {
+  width: 16rem;
+  padding: 1rem;
+}
+
+.aside-logo {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.233);
+  margin-top: 4rem;
+  justify-content: center;
+}
+
+/* === FOOTER SETTINGS === */
+
+.circle-footer {
+  position: fixed;
+  fill: #be37fdf5;
+  width: 400px;
+  bottom: -200px;
+  right: -200px;
+  transition: width 1s;
+}
+
+.circle-footer:hover {
+  width: 440px;
+}
